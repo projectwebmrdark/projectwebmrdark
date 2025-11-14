@@ -97,3 +97,43 @@
 - [ ] สร้างคู่มือ Deployment
 - [ ] สร้าง README.md
 - [ ] สร้าง CHANGELOG.md
+
+## Phase 9: Tool System
+- [x] สร้าง Tool Registry
+- [x] สร้าง Tool Executor
+- [x] สร้าง Tool Response Handler
+- [x] เชื่อมต่อ AI Function Calling กับ Tools
+
+## Phase 10: Code Execution
+- [x] สร้าง Code Execution API
+- [x] รองรับ Python execution (mock)
+- [x] รองรับ JavaScript execution
+- [x] แสดงผล output และ errors
+
+## Phase 11: Web Search
+- [x] สร้าง Web Search API
+- [x] เชื่อมต่อ Search Engine (mock)
+- [x] แสดงผลการค้นหา
+
+## Phase 12: File Management
+- [x] สร้าง File Upload API
+- [x] สร้าง File List (tRPC)
+- [ ] File Download API
+- [ ] File Preview UI
+
+## Phase 13: API Key Management
+- [x] สร้าง API Keys CRUD
+- [x] UI สำหรับจัดการ API Keys
+- [ ] Encryption สำหรับ API Keys (production)
+
+## Phase 14: Settings & Stats
+- [x] สร้าง Settings Page
+- [x] User Profile Settings
+- [ ] Usage Statistics Dashboard
+- [ ] Quota Management
+
+## Phase 15: Advanced Features
+- [ ] Image Generation Tool
+- [ ] Data Analysis Tool
+- [ ] Browser Automation Tool
+- [ ] Multi-language Support
