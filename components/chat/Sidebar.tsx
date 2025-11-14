@@ -24,9 +24,9 @@ interface Session {
 
 interface User {
   id: string;
-  email: string | null;
-  name: string | null;
-  avatar: string | null;
+  email: string | null | undefined;
+  name: string | null | undefined;
+  avatar: string | null | undefined;
 }
 
 interface SidebarProps {

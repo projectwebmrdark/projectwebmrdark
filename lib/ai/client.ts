@@ -16,7 +16,7 @@ export function createAIClient() {
 }
 
 export interface ChatMessage {
-  role: "system" | "user" | "assistant" | "tool";
+  role: "system" | "user" | "assistant";
   content: string;
 }
 
@@ -36,7 +36,7 @@ export async function generateChatCompletion(options: ChatOptions) {
   
   const response = await client.chat.completions.create({
     model: options.model || "gpt-4",
-    messages: options.messages,
+    messages: options.messages as any,
     temperature: options.temperature ? options.temperature / 100 : 0.7,
     max_tokens: options.max_tokens || 2000,
     stream: options.stream || false,
@@ -53,7 +53,7 @@ export async function* generateStreamingChatCompletion(options: ChatOptions) {
   
   const stream = await client.chat.completions.create({
     model: options.model || "gpt-4",
-    messages: options.messages,
+    messages: options.messages as any,
     temperature: options.temperature ? options.temperature / 100 : 0.7,
     max_tokens: options.max_tokens || 2000,
     stream: true,
